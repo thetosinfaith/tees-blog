@@ -1,8 +1,11 @@
 import React from 'react'
+import MainSection from '../../components/MainSection/MainSection'
 
 const BlogArchive = () => {
   return (
-    <div>BlogArchive</div>
+    <>
+    <MainSection/>
+    </>
   )
 }
 
