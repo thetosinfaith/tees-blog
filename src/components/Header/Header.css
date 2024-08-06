@@ -4,10 +4,30 @@
     box-sizing: border-box;
 }
 
-.header-container{
-    height: 100vh;
+.header-container {
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 8%;
     width: 100%;
-    background-color: red;
-    
-
-}
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (min-width: 1024px) {
+    .header-container {
+      margin-top: 5%;
+    }
+  }
+  
+    .header-title {
+    font-size: 1.50rem;
+    position: relative;
+    color: black;
+    margin-bottom: 50px;
+  }
+  
+  .header-title::before {
+    content: attr(data-text);
+  }
+  

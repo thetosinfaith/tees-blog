@@ -1,0 +1,117 @@
+.blog-section {
+    margin: 0 auto;
+    max-width: 1200px; 
+    padding: 30px 20px;
+  }
+  
+  .blog-title {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+  
+  .spinner {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+  }
+  
+  .post-card {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .post-card:hover {
+    opacity: 0.75;
+  }
+  
+  .post-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .post-info {
+    padding-top: 16px;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .read-more-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .read-more-button {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .post-title {
+    margin-top: 24px;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .post-description {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 12px;
+  }
+  
+  .post-tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+  
+  .post-tag {
+    background-color: black;
+    color: #333;
+    font-size: 0.875rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  .go-home-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 0;
+  }
+  
+  .go-home-button {
+    padding: 8px 32px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .go-home-button:hover {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+  }
+  
