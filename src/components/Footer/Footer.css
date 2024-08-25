@@ -3,3 +3,9 @@
     margin: 0;
     padding: 0;
 }
+
+.footer-body{
+    height: 20vh;
+    width: 100%;
+    background-color: black;
+}

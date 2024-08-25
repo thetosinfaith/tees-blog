@@ -30,6 +30,10 @@ body {
   animation: spinner-zp9dbg 1s infinite linear;
 }
 
+.white-space-pre-wrap {
+  white-space: pre-wrap; 
+}
+
 @keyframes spinner-zp9dbg {
   to {
       transform: rotate(1turn);
