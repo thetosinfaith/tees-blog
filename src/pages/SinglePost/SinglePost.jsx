@@ -92,8 +92,8 @@ const SinglePost = () => {
           </div>
         </div>
       )}
-      <div style={postContentStyle}>
-        <BlockContent
+      <div style={{ ...postContentStyle, whiteSpace: 'pre-wrap' }}>
+         <BlockContent
           blocks={singlePost.body}
           projectId="dr3oba85" 
           dataset="production" 
@@ -167,6 +167,9 @@ const postContentStyle = {
   lineHeight: '1.75',
   marginTop: '7%',
   padding: '5%',
+  fontSize: '1.3rem',
+  whiteSpace: 'pre-wrap', // Ensures line breaks are preserved
+  wordBreak: 'break-word',
 };
 
 export default SinglePost;

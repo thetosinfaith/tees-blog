@@ -30,6 +30,7 @@ function BlogArchive() {
         tags
       } | order(publishedAt desc)`)
       .then((data) => {
+        console.log("Fetched data:", data); // Log data
         setPosts(data.slice(0, 3));
       })
       .catch((err) => {
@@ -41,14 +42,7 @@ function BlogArchive() {
       });
   }, []);
 
-  const renderBody = (body) => {
-    if (typeof body === 'string') {
-      return <div dangerouslySetInnerHTML={{ __html: body }} />;
-    }
-    return <div>Content not available</div>;
-  };
-
-  console.log("Posts:", posts);
+  console.log("Posts in state:", posts); // Log posts
 
   return (
     <>
@@ -88,7 +82,7 @@ function BlogArchive() {
                     </span>
                   </Link>
                   <div className="post-body">
-                    {renderBody(post.body)}
+                    {typeof post.body === 'string' ? <div dangerouslySetInnerHTML={{ __html: post.body }} /> : <div>Content not available</div>}
                   </div>
                   <div className="post-tags">
                     {post.tags && post.tags.length > 0 ? (
